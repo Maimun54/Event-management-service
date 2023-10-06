@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "Product 1",
+      "category": "Electronics",
+      "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
+      "price": "$49.99",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac ex nec nulla placerat tempus.",
+      "button": "Add to Cart"
+    },
+    {
+      "id": 2,
+      "title": "Product 2",
+      "category": "Clothing",
+      "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
+      "price": "$29.99",
+      "description": "Sed eget justo ut justo luctus venenatis. Fusce ac urna eget ante hendrerit finibus.",
+      "button": "Buy Now"
+    },
+    {
+      "id": 3,
+      "title": "Product 3",
+      "category": "Home Decor",
+      "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
+      "price": "$99.95",
+      "description": "Vestibulum eu libero in diam hendrerit ultricies. Curabitur vel orci id nulla vehicula auctor.",
+      "button": "Add to Wishlist"
+    },
+    {
+      "id": 4,
+      "title": "Product 4",
+      "category": "Electronics",
+      "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
+      "price": "$79.99",
+      "description": "Duis rhoncus libero id ex auctor hendrerit. Nulla facilisi. Curabitur euismod massa et sapien fringilla.",
+      "button": "View Details"
+    },
+    {
+      "id": 5,
+      "title": "Product 5",
+      "category": "Sports",
+      "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
+      "price": "$39.95",
+      "description": "Aenean in massa in mi dapibus scelerisque. Quisque eu erat vel purus ultrices commodo.",
+      "button": "Add to Cart"
+    },
+    {
+      "id": 6,
+      "title": "Product 6",
+      "category": "Clothing",
+      "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
+      "price": "$59.99",
+      "description": "Fusce id mauris et lectus maximus volutpat. Vivamus tincidunt, nunc eget blandit fringilla, augue urna maximus ligula.",
+      "button": "Buy Now"
+    }
+  ]
+  
