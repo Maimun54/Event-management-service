@@ -1,56 +1,54 @@
 [
     {
       "id": 1,
-      "title": "Product 1",
+      "title": "Reunion",
       "category": "Electronics",
       "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
       "price": "$49.99",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac ex nec nulla placerat tempus.",
+      "description": "Leave the details to us as we expertly plan your reunion party. We'll bring your cherished memories to life, creating a seamless and unforgettable gathering for you and your loved ones",
       "button": "Add to Cart"
     },
     {
       "id": 2,
-      "title": "Product 2",
+      "title": "Birthday",
       "category": "Clothing",
       "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
       "price": "$29.99",
-      "description": "Sed eget justo ut justo luctus venenatis. Fusce ac urna eget ante hendrerit finibus.",
+      "description": "join us for a fantastic birthday celebration filled with laughter, joy, and surprises. We're marking another year of life, and your presence will make it even more memorable!",
       "button": "Buy Now"
     },
     {
       "id": 3,
-      "title": "Product 3",
+      "title": "Wedding",
       "category": "Home Decor",
       "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
       "price": "$99.95",
-      "description": "Vestibulum eu libero in diam hendrerit ultricies. Curabitur vel orci id nulla vehicula auctor.",
-      "button": "Add to Wishlist"
+      "description": "Come share in the love and joy as we unite in matrimony. Join us for a beautiful wedding celebration, an enchanting day filled with love, laughter, and lasting memories"
     },
     {
       "id": 4,
-      "title": "Product 4",
+      "title": "Anniversaries",
       "category": "Electronics",
       "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
       "price": "$79.99",
-      "description": "Duis rhoncus libero id ex auctor hendrerit. Nulla facilisi. Curabitur euismod massa et sapien fringilla.",
+      "description": "Celebrate enduring love and commitment at our anniversary party. Join us for a memorable evening of togetherness, reflecting on cherished moments and looking forward to a future filled with happiness",
       "button": "View Details"
     },
     {
       "id": 5,
-      "title": "Product 5",
+      "title": "Engagement",
       "category": "Sports",
       "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
       "price": "$39.95",
-      "description": "Aenean in massa in mi dapibus scelerisque. Quisque eu erat vel purus ultrices commodo.",
-      "button": "Add to Cart"
+      "description": "Let us plan your engagement party to perfection. Our expert event management team ensures every detail is flawless, creating a memorable and romantic celebration of your love"
     },
     {
       "id": 6,
-      "title": "Product 6",
+      "title": "Retirement ",
       "category": "Clothing",
       "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
       "price": "$59.99",
-      "description": "Fusce id mauris et lectus maximus volutpat. Vivamus tincidunt, nunc eget blandit fringilla, augue urna maximus ligula.",
+      "description": "Trust our event management expertise for a seamless retirement celebration. We handle everything, ensuring the retiree enjoys a well-deserved farewell with colleagues, friends, and family.",
       "button": "Buy Now"
     }
   ]
