@@ -14,24 +14,29 @@ const auth= getAuth(app)
 const AuthProvider = ({children}) => {
   
     const [user,setUser] =useState(null)
-    
+    const [dataLoader,setDataLoader]=useState(true)
 
     const createUser =(email,password)=>{
+        setDataLoader(true)
         return createUserWithEmailAndPassword(auth,email,password)
     }
     const SignIn = (email,password)=>{
+        setDataLoader(true)
         return signInWithEmailAndPassword(auth,email,password)
     }
     const loginOut = ()=>{
+        setDataLoader(true)
         return signOut(auth)
     }
     useEffect(()=>{
      const unSubscribe = onAuthStateChanged(auth,currentUser=>{
-
+             
             console.log('check user',currentUser)
             setUser(currentUser)
+            setDataLoader(false)
         })
         return ()=>{
+            
             unSubscribe()
         } 
     },[])
@@ -40,7 +45,8 @@ const AuthProvider = ({children}) => {
         user,
         createUser,
         SignIn,
-        loginOut
+        loginOut,
+        dataLoader
     }
     return (
         <AuthContext.Provider value={authInfo}>

@@ -4,6 +4,7 @@ import { useLoaderData } from "react-router-dom";
 const ServiceDetails = () => {
     
     const serviceItem = useLoaderData()
+    
     console.log(serviceItem)
     return (
         <div>

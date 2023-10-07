@@ -5,6 +5,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import ServiceDetails from "../Componets/ServiceDetails";
 import Errorpage from "../ErrorPage/Errorpage";
+import PrivateProvider from "../Provider/PrivateProvider";
 
 
 const router = createBrowserRouter([
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
         },
         {
             path:"/details/:id",
-            element:<ServiceDetails></ServiceDetails>,
+            element:<PrivateProvider><ServiceDetails></ServiceDetails></PrivateProvider>,
             loader:()=>fetch('/services.json')
         }
       ]
