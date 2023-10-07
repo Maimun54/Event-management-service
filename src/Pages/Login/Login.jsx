@@ -1,13 +1,38 @@
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { AuthContext } from "../../Provider/AuthProvider";
+import swal from 'sweetalert';
 
 const Login = () => {
+  const {user,SignIn}=useContext(AuthContext)
+  const [valiedInfo,setValiedInfo]=useState('')
+ const handleLogin= e =>{
+  
+        e.preventDefault()
+      const email =e.target.email.value 
+      const password=e.target.password.value 
+      console.log(email,password)
+
+      //  if(user.email==email){
+      //   swal("Sorry!", "You email is wrong!", "error");
+      //   return
+      //  }
+      SignIn(email,password)
+      .then(res=>{
+        console.log(res.user)
+      })
+      .catch(error=>{
+        console.error(error)
+      swal("Sorry!", "You email and password is wrong!", "error");
+        return
+      })
+ }
+
     return (
         <div className="mt-10">
         <h2 className="text-3xl text-center font-bold">Please Login</h2>
-       <form  className=" mx-auto md:w-3/4 lg:w-1/2">
+       <form onSubmit={handleLogin}  className=" mx-auto md:w-3/4 lg:w-1/2">
 
-       
        
        <div className="form-control ">
        <label className="label">

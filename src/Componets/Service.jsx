@@ -14,7 +14,7 @@ const Service = ({service}) => {
     <p>{description}</p>
     <p>Price:{price}</p>
     <div className="card-actions justify-center">
-      <Link to=""><button className="btn btn-primary">View Details</button></Link>
+      <Link to={`details/${id}`}><button className="btn btn-primary">View Details</button></Link>
     </div>
   </div>
 </div>

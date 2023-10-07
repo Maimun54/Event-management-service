@@ -1,10 +1,13 @@
 import { useLoaderData } from "react-router-dom";
 import Service from "../../Componets/Service";
 import Banner from "../../Componets/Header/banner";
+import EventPhotos from "./EventPhotos";
+import Testimonials from "./Testimonials";
 
 
 const Home = () => {
     const services =useLoaderData()
+    
     console.log(services)
     return (
         <div >
@@ -17,6 +20,8 @@ const Home = () => {
                 services.map(service=><Service key={service.id} service={service}></Service>)
             }
             </div>
+            <EventPhotos></EventPhotos>
+            <Testimonials></Testimonials>
              </div>
         </div>
     );

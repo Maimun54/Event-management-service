@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import swal from 'sweetalert';
@@ -6,6 +6,7 @@ import swal from 'sweetalert';
 
 const Register = () => {
     const {createUser} =useContext(AuthContext) 
+    const [registerCondition,setRegisterConditon] =useState('')
     const handleRegister =(e)=>{
          e.preventDefault()
          const email =e.target.email.value;
@@ -13,14 +14,26 @@ const Register = () => {
          const password=e.target.password.value 
          console.log(name,email,password,)
 
+        
+         if(password.length<6){
+          setRegisterConditon (swal("Sorry!", "Your password should be at least 8 digit!", "error"))
+
+          return;
+        }else if(!/[A-Z][!@#$&*]/.test(password)){
+          setRegisterConditon (swal("Sorry!", "Your password should be at least uppercase and special character!", "error"))
+          return
+        }
         createUser(email,password)
         .then(result=>{
+          
             console.log(result.user)
             swal("Good job!", "You Register!", "success");
 
         })
         .catch(error=>{
             console.error(error)
+            swal("Sorry!", "Your password should be at least 6 digit!", "error");
+
         })
     }
     return (
