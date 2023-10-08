@@ -1,11 +1,19 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Testimonials = () => {
+   useEffect(()=>{
+      AOS.init();
+   },[])
     return (
-        <div className="mb-10" >
+      <div className="mb-10" >
+
+         
+
         <h2 className="text-center text-4xl font-bold my-10">What Clients Say</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-         <div className=" text-center border m-5 p-5">
+         <div data-aos="fade-right"  className=" text-center border m-5 p-5">
             <div className="rounded-full">
             <img className=" mx-auto py-5" src="https://i.ibb.co/S5HFknp/Florian.jpg" alt="" />
             </div>
@@ -19,7 +27,7 @@ const Testimonials = () => {
 </div>
             <p className="mt-5">Overall, LuxeLife Events turned our vision into reality and created a birthday celebration that will be cherished in our memories forever. You exceeded our expectations in every way, and we can't thank you enough for your dedication and commitment to making this day so magical.</p>
          </div>
-         <div className=" text-center m-5 border p-5">
+         <div data-aos="fade-right"  className=" text-center m-5 border p-5">
             <div className="rounded-full">
             <img className=" mx-auto py-5" src="https://i.ibb.co/LxV5kmC/rsz-seth-blum-optimized.jpg" alt="" />
             </div>
@@ -33,7 +41,7 @@ const Testimonials = () => {
 </div>
             <p className="mt-5">That's a wonderful way to express your gratitude and satisfaction with LuxeLife Events' services for your engagement event. It's concise and heartfelt, and it effectively conveys your appreciation for their hard work and dedication in making your special day memorable. Your feedback will undoubtedly be valued by their team.</p>
          </div>
-         <div className=" text-center m-5 border p-5">
+         <div data-aos="fade-right"  className=" text-center m-5 border p-5">
             <div className="rounded-full">
             <img className=" mx-auto py-5" src="https://i.ibb.co/Z1Hv5GQ/photo-2023-07-04-23-03-45.jpg" alt="" />
             </div>
@@ -51,5 +59,6 @@ const Testimonials = () => {
         </div>
     );
 };
+
 
 export default Testimonials;

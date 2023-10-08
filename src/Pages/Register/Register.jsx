@@ -2,19 +2,20 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import swal from 'sweetalert';
-import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, getAuth, signInWithPopup, updateProfile } from "firebase/auth";
 import app from "../../Firebase/firebase.config";
 
 const googleProvider = new GoogleAuthProvider()
+
 const auth=getAuth(app)
 const Register = () => {
-    const {createUser} =useContext(AuthContext) 
+    const {createUser,user} =useContext(AuthContext) 
     const [registerCondition,setRegisterCondition] =useState('')
     const handleRegister =(e)=>{
          e.preventDefault()
          const email =e.target.email.value;
          const name =e.target.name.value;
-         const photo =e.target.name.value;
+         const photo =e.target.photo.value;
          const password=e.target.password.value 
          console.log(name,photo,email,password,)
 
@@ -40,6 +41,7 @@ const Register = () => {
 
         })
     }
+
   const handleGoogleLogin =()=>{
      signInWithPopup(auth,googleProvider)
      .then(result=>{
@@ -48,6 +50,14 @@ const Register = () => {
      .catch(error=>{
       console.error(error)
      })
+     updateProfile(auth.currentUser, {
+      displayName: "Jane Q. User", photoURL: "https://example.com/jane-q-user/profile.jpg"
+    })
+    .then(() => {
+      
+    }).catch((error) => {
+      console.error(error)
+    });
   }
     return (
         <div>
@@ -66,6 +76,7 @@ const Register = () => {
             <span className="label-text">Photo</span>
           </label>
           <input type="text" name="photo"  required placeholder="Photo url" className="input input-bordered"  />
+          
         </div>
           
           <div className="form-control ">

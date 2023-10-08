@@ -3,8 +3,9 @@
       "id": 1,
       "title": "Reunion",
       "category": "Electronics",
-      "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
-      "price": "$49.99",
+      "image2": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
+      "image": "https://i.ibb.co/TMh0rJq/istockphoto-1371940128-2048x2048.jpg",
+      "price": "$1499",
       "description": "Leave the details to us as we expertly plan your reunion party. We'll bring your cherished memories to life, creating a seamless and unforgettable gathering for you and your loved ones",
       "button": "Add to Cart"
     },
@@ -13,7 +14,8 @@
       "title": "Birthday",
       "category": "Clothing",
       "image": "https://i.ibb.co/ChBfHFq/pexels-pavel-danilyuk-7180858.jpg",
-      "price": "$29.99",
+      "price": "$999",
+      "image2": "https://i.ibb.co/8N5Szj3/pexels-pavel-danilyuk-7180617.jpg",
       "description": "join us for a fantastic birthday celebration filled with laughter, joy, and surprises. We're marking another year of life, and your presence will make it even more memorable!",
       "button": "Buy Now"
     },
@@ -22,15 +24,17 @@
       "title": "Wedding",
       "category": "Home Decor",
       "image": "https://i.ibb.co/sQ879xr/pexels-tr-n-long-14581426-1.jpg",
-      "price": "$99.95",
+      "image2": "https://i.ibb.co/BcQL8wt/pexels-asad-photo-maldives-169193.jpg",
+      "price": "$9999",
       "description": "Come share in the love and joy as we unite in matrimony. Join us for a beautiful wedding celebration, an enchanting day filled with love, laughter, and lasting memories"
     },
     {
       "id": 4,
       "title": "Anniversaries",
       "category": "Electronics",
-      "image": "https://i.ibb.co/TLWPkh5/istockphoto-1309237361-2048x2048.jpg",
-      "price": "$79.99",
+      "image2": "https://i.ibb.co/BZfFCVG/pexels-ivan-samkov-7911309.jpg",
+      "image": "https://i.ibb.co/MN1P2pY/pexels-ivan-samkov-7922176.jpg",
+      "price": "$1999.99",
       "description": "Celebrate enduring love and commitment at our anniversary party. Join us for a memorable evening of togetherness, reflecting on cherished moments and looking forward to a future filled with happiness",
       "button": "View Details"
     },
@@ -39,16 +43,18 @@
       "title": "Engagement",
       "category": "Sports",
       "image": "https://i.ibb.co/Gx3y4Hr/pexels-jasmine-carter-888899.jpg",
-      "price": "$39.95",
+      "image2": "https://i.ibb.co/8DjwQc5/pexels-jeremy-wong-1026390.jpg",
+      "price": "$3000.95",
       "description": "Let us plan your engagement party to perfection. Our expert event management team ensures every detail is flawless, creating a memorable and romantic celebration of your love"
     },
     {
       "id": 6,
-      "title": "Retirement ",
+      "title": "Happy Ending ",
       "category": "Clothing",
       "image": "https://i.ibb.co/nnX48Pf/party-8080105-1280.jpg",
-      "price": "$59.99",
-      "description": "Trust our event management expertise for a seamless retirement celebration. We handle everything, ensuring the retiree enjoys a well-deserved farewell with colleagues, friends, and family.",
+      "image2": "https://i.ibb.co/BcQL8wt/pexels-asad-photo-maldives-169193.jpg",
+      "price": "$1999.99",
+      "description": "Trust our event management expertise for a seamless Happy Ending celebration. We handle everything, ensuring the retiree enjoys a well-deserved farewell with colleagues, friends, and family.",
       "button": "Buy Now"
     }
   ]

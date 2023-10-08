@@ -6,6 +6,7 @@ import Register from "../Pages/Register/Register";
 import ServiceDetails from "../Componets/ServiceDetails";
 import Errorpage from "../ErrorPage/Errorpage";
 import PrivateProvider from "../Provider/PrivateProvider";
+import Gallery from "../Pages/Register/Gallery/Gallery";
 
 
 const router = createBrowserRouter([
@@ -32,7 +33,11 @@ const router = createBrowserRouter([
             path:"/details/:id",
             element:<PrivateProvider><ServiceDetails></ServiceDetails></PrivateProvider>,
             loader:()=>fetch('/services.json')
-        }
+        },
+        {
+          path:"/gallery",
+          element:<PrivateProvider><Gallery></Gallery></PrivateProvider>
+      }
       ]
     },
   ]);

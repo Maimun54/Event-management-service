@@ -1,8 +1,14 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+<h2>Website Name :LuxeLife Events.com</h2>
+<h2>Website Link</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>Top 5  features this website</h2>
+
+      <ul>
+        <li>Easy to Booking your Event throw online</li>
+        <li>Check Our client testimonial</li>
+        <li>Check Our Photographer quality</li>
+        <li>Choice your Event stage design</li>
+        <li>Easy to see Recent our Events</li>
+      </ul>
