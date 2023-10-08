@@ -5,6 +5,7 @@
 
 <h2>Top 5  features this website</h2>
 
+     <div>
       <ul>
         <li>Easy to Booking your Event throw online</li>
         <li>Check Our client testimonial</li>
@@ -12,3 +13,4 @@
         <li>Choice your Event stage design</li>
         <li>Easy to see Recent our Events</li>
       </ul>
+     </div>
