@@ -64,6 +64,7 @@ const Register = () => {
      signInWithPopup(auth,googleProvider)
      .then(result=>{
       console.log(result.user)
+      navigate('/')
      })
      .catch(error=>{
       console.error(error)
