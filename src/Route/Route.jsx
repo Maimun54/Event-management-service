@@ -6,8 +6,10 @@ import Register from "../Pages/Register/Register";
 import ServiceDetails from "../Componets/ServiceDetails";
 import Errorpage from "../ErrorPage/Errorpage";
 import PrivateProvider from "../Provider/PrivateProvider";
-import Gallery from "../Pages/Register/Gallery/Gallery";
+
 import Discount from "../Pages/Discount/Discount";
+import Gallery from "../Pages/Gallery/Gallery";
+import WeddingG from "../Pages/Gallery/WeddingG";
 
 
 const router = createBrowserRouter([
@@ -42,6 +44,11 @@ const router = createBrowserRouter([
         {
           path:"/discount",
           element:<PrivateProvider><Discount></Discount></PrivateProvider>
+      },
+      
+        {
+          path:"/wedding",
+          element:<PrivateProvider><WeddingG></WeddingG></PrivateProvider>
       }
       ]
     },

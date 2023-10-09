@@ -6,7 +6,7 @@ const Service = ({service}) => {
     const {id,image,description,price,button,title}=service
     
     return (
-        <div data-aos="zoom-in" className="py-5">
+        <div  className="py-5">
     <div className=" lg:h-[600px] md:h-[600px] card   bg-base-100 shadow-xl">
   <figure><img src={image} alt="image" /></figure>
   <div className="card-body">

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import swal from 'sweetalert';
 import { GoogleAuthProvider, getAuth, signInWithPopup, updateProfile } from "firebase/auth";
@@ -11,6 +11,8 @@ const auth=getAuth(app)
 const Register = () => {
     const {createUser,user} =useContext(AuthContext) 
     const [registerCondition,setRegisterCondition] =useState('')
+    const location =useLocation()
+    const navigate =useNavigate()
     const handleRegister =(e)=>{
          e.preventDefault()
          const email =e.target.email.value;
@@ -21,19 +23,23 @@ const Register = () => {
 
         
          if(password.length<6){
-          setRegisterCondition (swal("Sorry!", "Your password should be at least 8 digit!", "error"))
+          swal("Sorry!", "Your password should be at least 6 digit!", "error")
 
           return;
-        }else if(!/[A-Z][!@#$&*]/.test(password)){
-          setRegisterCondition (swal("Sorry!", "Your password should be at least uppercase and special character!", "error"))
+        }else if(!/[A-Z]/.test(password)){
+          swal("Sorry!", "Your password should be at least uppercase ", "error")
+          return
+        }else if(!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)){
+          swal("Sorry!", "Your password should be at least  special character!", "error")
           return
         }
+        
         createUser(email,password)
         .then(result=>{
           
             console.log(result.user)
             swal("Good job!", "You Register!", "success");
-            
+            navigate('/')
             updateProfile(result.user, {
               displayName: name,
                photoURL: photo
@@ -100,6 +106,7 @@ const Register = () => {
           </label>
         </div>
         <div className="form-control mt-6">
+          
           <button className="btn btn-primary">Register</button>
           <div className="text-center py-5">
               <p className="text-2xl">Continue With <button className="btn btn-primary" onClick={handleGoogleLogin}>Google</button></p>
