@@ -7,6 +7,7 @@ import ServiceDetails from "../Componets/ServiceDetails";
 import Errorpage from "../ErrorPage/Errorpage";
 import PrivateProvider from "../Provider/PrivateProvider";
 import Gallery from "../Pages/Register/Gallery/Gallery";
+import Discount from "../Pages/Discount/Discount";
 
 
 const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
         {
           path:"/gallery",
           element:<PrivateProvider><Gallery></Gallery></PrivateProvider>
+      },
+        {
+          path:"/discount",
+          element:<PrivateProvider><Discount></Discount></PrivateProvider>
       }
       ]
     },

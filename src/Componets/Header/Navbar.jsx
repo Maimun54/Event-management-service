@@ -10,11 +10,14 @@ const Navbar = () => {
          <li><NavLink to="/gallery">Gallery</NavLink></li>
          <li><NavLink to="/login">Login</NavLink></li>
          <li><NavLink to="/register">Register</NavLink></li>
+         <li><NavLink to="/discount">Discount</NavLink></li>
     </>
   const {user, loginOut}=useContext(AuthContext)
   
-  console.log('Picture',user?.photoURL)
-  console.log('userName',user?.displayName)
+  // console.log(user)
+  // console.log('Picture',user?.photoURL)
+  // console.log('userName',user?.displayName)
+
   const handleLogOut =()=>{
     loginOut()
     .then()

@@ -33,6 +33,18 @@ const Register = () => {
           
             console.log(result.user)
             swal("Good job!", "You Register!", "success");
+            
+            updateProfile(result.user, {
+              displayName: name,
+               photoURL: photo
+               
+               
+            })
+            .then(() => {
+              
+            }).catch((error) => {
+              console.error(error)
+            });
 
         })
         .catch(error=>{
@@ -50,14 +62,7 @@ const Register = () => {
      .catch(error=>{
       console.error(error)
      })
-     updateProfile(auth.currentUser, {
-      displayName: "Jane Q. User", photoURL: "https://example.com/jane-q-user/profile.jpg"
-    })
-    .then(() => {
-      
-    }).catch((error) => {
-      console.error(error)
-    });
+     
   }
     return (
         <div>
